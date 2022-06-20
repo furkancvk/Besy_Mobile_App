@@ -63,6 +63,8 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/images/logo2.png
+    - assets/images/pexels-tobi-457447.jpg
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -92,7 +94,7 @@ flutter:
   fonts:
     - family: Monda
       fonts:
-        - asset: assets/fonts/Monda-Regular.ttf
+        - asset: assets/fonts/Monda-Bold.ttf
 
     - family: Mitr
       fonts:

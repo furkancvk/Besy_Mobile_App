@@ -1,6 +1,6 @@
 
 import 'package:besy_mobile_app/Colors.dart';
-import 'package:besy_mobile_app/views/LoginPage.dart';
+import 'package:besy_mobile_app/views/SearchingPage.dart';
 import 'package:flutter/material.dart';
 
 
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         
       ),
 
-      home:LoginPage()
+      home:SearchingPage()
     );
   }
 
