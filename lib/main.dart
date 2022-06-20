@@ -1,15 +1,15 @@
-
-import 'package:besy_mobile_app/Colors.dart';
-import 'package:besy_mobile_app/views/SearchingPage.dart';
+import 'colors.dart';
 import 'package:flutter/material.dart';
 
+import 'routes/routes.dart';
+import 'views/login.dart';
 
-void main()  {
-  runApp(MyApp());
+void main() {
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +18,10 @@ class MyApp extends StatelessWidget {
       title: 'Besy',
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors.cream,
-        appBarTheme:AppBarTheme(backgroundColor: AppColors.darkBrown),
-        
+        appBarTheme: const AppBarTheme(backgroundColor: AppColors.darkBrown),
       ),
-
-      home:SearchingPage()
+      home: const Login(),
+      routes: routes,
     );
   }
-
 }

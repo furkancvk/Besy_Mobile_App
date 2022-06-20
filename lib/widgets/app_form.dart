@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../utils/form_validation.dart';
 import '../colors.dart';
 
 class AppForm {
@@ -26,16 +27,17 @@ class AppForm {
             if (value == null || value.isEmpty) {
               return label.toLowerCase() + " is required";
             } else if (isEmail) {
-
+              FormValidation.validateEmail(value);
             } else if (isPassword) {
-
+              FormValidation.validatePassword(value);
             } else {
               return null;
             }
             return null;
           },
           controller: controller,
-          keyboardType: isEmail ? TextInputType.emailAddress : TextInputType.text,
+          keyboardType:
+              isEmail ? TextInputType.emailAddress : TextInputType.text,
           obscureText: isPassword,
           decoration: InputDecoration(
             filled: true,

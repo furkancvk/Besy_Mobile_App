@@ -1,4 +1,4 @@
-import 'package:besy_mobile_app/Colors.dart';
+import 'package:besy_mobile_app/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppCards {
@@ -11,8 +11,7 @@ class AppCards {
     required String health,
     required String vaccine,
     required String image,
-
-}) {
+  }) {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(2)),
@@ -25,8 +24,7 @@ class AppCards {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage(image),
-                      fit: BoxFit.fill),
+                      image: AssetImage(image), fit: BoxFit.fill),
                   borderRadius: BorderRadius.all(Radius.circular(2)),
                   color: AppColors.darkBrown),
               width: 130,
@@ -37,7 +35,7 @@ class AppCards {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "ID: " + ID.toString() ,
+                  "ID: " + ID.toString(),
                   style: TextStyle(
                       fontFamily: "Monda",
                       fontSize: 16,
@@ -53,7 +51,7 @@ class AppCards {
                           color: AppColors.darkBrown),
                     ),
                     Text(
-                      "      "+ type,
+                      "      " + type,
                       style: TextStyle(
                           fontFamily: "Monda",
                           fontSize: 14,
@@ -64,14 +62,14 @@ class AppCards {
                 Row(
                   children: [
                     Text(
-                      age.toString()+" yaş",
+                      age.toString() + " yaş",
                       style: TextStyle(
                           fontFamily: "Monda",
                           fontSize: 14,
                           color: AppColors.darkBrown),
                     ),
                     Text(
-                      "       "+kg.toString()+" kg",
+                      "       " + kg.toString() + " kg",
                       style: TextStyle(
                           fontFamily: "Monda",
                           fontSize: 14,
@@ -107,6 +105,56 @@ class AppCards {
               ],
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  static Widget infoCard({
+    required int count,
+    required String type,
+  }) {
+    return GestureDetector(
+      onTap: () => {
+        // Navigator.pushNamed(context, 'movie_detail_screen',
+        // arguments: {'movie': movie}),
+      },
+      child: Card(
+        elevation: 0,
+        color: const Color.fromRGBO(89, 42, 14, 0.15),
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                count.toString(),
+                style: const TextStyle(
+                  fontFamily: "Monda",
+                  fontSize: 20,
+                  color: AppColors.darkBrown,
+                ),
+              ),
+              const Text(
+                "tane",
+                style: TextStyle(
+                  fontFamily: "Monda",
+                  fontSize: 20,
+                  color: AppColors.darkBrown,
+                ),
+              ),
+              Text(
+                type.toUpperCase(),
+                style: const TextStyle(
+                  fontFamily: "Monda",
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.darkBrown,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

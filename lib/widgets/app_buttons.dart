@@ -1,26 +1,23 @@
-import 'package:besy_mobile_app/colors.dart';
+import '../colors.dart';
 import 'package:flutter/material.dart';
 
-
 class AppButtons {
-
-  static Widget appDropDownButton({
+  static Widget appDropdownButton({
     required String label,
     required List<DropdownMenuItem<dynamic>> items,
     required Function(dynamic) onChanged,
     required selectedValue,
     required icon,
-}) {
+  }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          label,
-          style: const TextStyle(
-            fontFamily: "Monda",
-            fontSize: 16,
-            color: AppColors.darkBrown,
-          )),
+        Text(label,
+            style: const TextStyle(
+              fontFamily: "Monda",
+              fontSize: 16,
+              color: AppColors.darkBrown,
+            )),
         DropdownButtonFormField(
             style: const TextStyle(
               fontFamily: "Monda",
@@ -71,15 +68,13 @@ class AppButtons {
               ),
             ),
             value: selectedValue,
-            icon:  icon,
+            icon: icon,
             iconSize: 40,
             items: items,
             onChanged: onChanged),
       ],
     );
   }
-
-
 
   static Widget appTextButton({
     required String name,
@@ -98,7 +93,8 @@ class AppButtons {
     return ElevatedButton(
       onPressed: onPressed,
       style: ButtonStyle(
-        padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
+        padding: MaterialStateProperty.all(
+            const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
         backgroundColor: MaterialStateProperty.all(AppColors.darkBrown),
       ),
       child: Text(

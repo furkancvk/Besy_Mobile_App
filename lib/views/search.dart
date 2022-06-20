@@ -1,17 +1,16 @@
-import 'package:besy_mobile_app/Colors.dart';
+import 'package:besy_mobile_app/colors.dart';
 import 'package:besy_mobile_app/widgets/app_form.dart';
 import 'package:flutter/material.dart';
 import 'package:besy_mobile_app/widgets/app_cards.dart';
 
-
-class SearchingPage extends StatefulWidget {
-  const SearchingPage({Key? key}) : super(key: key);
+class Search extends StatefulWidget {
+  const Search({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _SearchingPage();
+  State<StatefulWidget> createState() => _Search();
 }
 
-class _SearchingPage extends State<SearchingPage> {
+class _Search extends State<Search> {
   TextEditingController AnimalIdCheck = new TextEditingController();
 
   @override
@@ -102,7 +101,6 @@ class _SearchingPage extends State<SearchingPage> {
                 health: "SAĞLIKLI",
                 vaccine: "AŞILI",
                 image: "assets/images/pexels-tobi-457447.jpg")
-
           ],
         ),
       ),
