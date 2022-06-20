@@ -148,7 +148,7 @@ class AppCards {
                 type.toUpperCase(),
                 style: const TextStyle(
                   fontFamily: "Monda",
-                  fontSize: 18,
+                  fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: AppColors.darkBrown,
                 ),
