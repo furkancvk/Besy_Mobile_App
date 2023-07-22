@@ -1,16 +1,12 @@
-# besy_mobile_app
+# BESY
+This project for improving our react-native with expo skills. We created MEMEapp. Users can add meme sounds, images and memes and share each others and users can create own memes.
 
-A new Flutter project.
+![MEMEapp](https://firebasestorage.googleapis.com/v0/b/my-first-project-5d32d.appspot.com/o/1690020129638?alt=media&token=4c88ece6-0ebe-4012-9d77-83e122dd59bd)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Authors
 
-A few resources to get you started if this is your first Flutter project:
+- [@OFD16](https://github.com/OFD16)
+- [@furkancvk](https://github.com/furkancvk)
+- [@tozlukozmos](https://github.com/tozlukozmos)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
